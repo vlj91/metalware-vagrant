@@ -7,6 +7,7 @@ yum install -y vim
 mkdir -p /root/.ssh
 cat /home/vagrant/.ssh/authorized_keys > /root/.ssh/authorized_keys
 
+export alces_SOURCE_BRANCH=feature/libvirt-power-integration
 curl -sL http://git.io/metalware-installer | /bin/bash
 
 echo "pathmunge /opt/metalware/opt/ruby/bin" > /etc/profile.d/metalware-ruby.sh
